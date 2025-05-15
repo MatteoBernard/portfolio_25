@@ -1,0 +1,9 @@
+{
+  "test": "test_en",
+  "navbar": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}
