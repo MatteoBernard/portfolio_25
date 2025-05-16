@@ -28,13 +28,13 @@ const LanguageSwitcher = () => {
         <div className="relative">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="p-2 border rounded-full flex items-center"
+                className="p-2 flex items-center"
             >
                 <Globe className="h-5 w-5 text-white" />
                 <span className="sr-only">Switch language</span>
             </button>
             {isOpen && (
-                <div className="absolute right-0 mt-2 w-32 bg-black border border-gray-700 rounded shadow-md">
+                <div className="absolute top-full right-0 mt-2 w-32 bg-black border border-gray-700 rounded shadow-md">
                     <button
                         onClick={() => {
                             switchLanguage("fr");

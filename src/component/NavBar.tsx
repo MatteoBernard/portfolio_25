@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import React from "react";
+import {useState} from "react";
 import { useTranslations } from "use-intl";
 import Link from "next/link";
 import LanguageSwitcher from "@/component/LanguageSwitcher";
@@ -9,7 +9,7 @@ import { Code, Menu, XCircle } from "lucide-react";
 
 const NavBar = () => {
     const pathname = usePathname();
-    const [isOpen, setIsOpen] = React.useState<boolean>(false);
+    const [isOpen, setIsOpen] = useState<boolean>(false);
     const t = useTranslations();
 
     const routes = [
@@ -36,10 +36,10 @@ const NavBar = () => {
     ];
 
     return (
-        <div className="flex items-center justify-between w-full px-6">
-            <div className="flex items-center">
+        <div className="relative flex items-center justify-between w-full px-6 p-2 border-b border-white">
+            <div className="flex items-center justify-between">
                 <Link href="/" className="mr-6 flex items-center space-x-2">
-                    <Code className="h-6 w-6 text-violet-600" />
+                    <Code className="h-6 w-6 text-violet-600"/>
                     <span className="hidden font-bold sm:inline-block">Bernard Matteo</span>
                 </Link>
                 <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -57,31 +57,23 @@ const NavBar = () => {
                 </nav>
             </div>
 
-            <div className="hidden md:block">
-                <LanguageSwitcher />
+            <div className="hidden md:block ">
+                <LanguageSwitcher/>
             </div>
 
-            <div className="md:hidden">
-                <button
-                    onClick={() => setIsOpen(!isOpen)}
-                >
+            <div className="md:hidden flex items-center space-x-2">
+                <button onClick={() => setIsOpen(!isOpen)}>
                     {isOpen ? (
-                        <XCircle className="h-5 w-5 text-white" />
+                        <XCircle className="h-5 w-5 text-white"/>
                     ) : (
-                        <Menu className="h-5 w-5 text-white" />
+                        <Menu className="h-5 w-5 text-white"/>
                     )}
                 </button>
             </div>
 
             {isOpen && (
-                <div className="absolute top-0 left-0 w-full h-full bg-black z-50 p-4">
-                    <button
-                        onClick={() => setIsOpen(false)}
-                        className="p-2 border rounded mb-4"
-                    >
-                        <XCircle className="h-5 w-5 text-white" />
-                    </button>
-                    <nav className="flex flex-col gap-4 text-lg">
+                <div className="absolute top-full left-0 w-full bg-black z-50 p-4 border-t">
+                    <nav className="flex flex-col gap-4 text-lg text-right">
                         {routes.map((route) => (
                             <Link
                                 key={route.href}
@@ -89,15 +81,15 @@ const NavBar = () => {
                                 onClick={() => setIsOpen(false)}
                                 className={`transition-colors hover:text-gray-400 ${
                                     route.active ? "text-gray-400 font-bold" : "text-white"
-                                } flex items-center space-x-2`}
+                                } flex items-center justify-end space-x-2`}
                             >
                                 <span>{route.label}</span>
                             </Link>
                         ))}
+                        <div className="flex justify-end">
+                            <LanguageSwitcher />
+                        </div>
                     </nav>
-                    <div className="mt-6">
-                        <LanguageSwitcher />
-                    </div>
                 </div>
             )}
         </div>

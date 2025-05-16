@@ -11,17 +11,16 @@ const RootLayout = async ({children}: Readonly<{ children: React.ReactNode; }>) 
     <html lang={locale}>
       <body>
       <NextIntlClientProvider>
-          <header
-              className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-              <div className="container flex h-14 items-center">
-                  <NavBar />
-              </div>
-          </header>
-          {children}
+          <header className="sticky top-0 z-50 bg-background/95 backdrop-blur
+              supports-[backdrop-filter]:bg-background/60">
+          <NavBar/>
+      </header>
+      {children}
       </NextIntlClientProvider>
-      </body>
-    </html>
-    );
+    </body>
+</html>
+)
+    ;
 }
 
 export default RootLayout;
