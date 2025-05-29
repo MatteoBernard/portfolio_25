@@ -69,9 +69,9 @@ const Home = () => {
                         <div className="flex items-center justify-center">
                             <div
                                 className="relative w-48 h-48 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-[350px] lg:h-[350px] rounded-full bg-gradient-to-br from-violet-600 to-violet-900 p-1">
-                                <div className="absolute inset-0 rounded-full overflow-hidden">
+                                <div className="absolute inset-0 rounded-full shadow-all-around overflow-hidden bg-violet-600 opacity-80">
                                     <img
-                                        src="/placeholder.svg"
+                                        src="/images/me.png"
                                         alt={t('home.hero.portraitAlt')}
                                         width={350}
                                         height={350}

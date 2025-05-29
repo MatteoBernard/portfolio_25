@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.shadow-all-around {
+  box-shadow: 0 0 8px 8px slateblue;
+}

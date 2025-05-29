@@ -14,9 +14,9 @@ const About = () => {
                         <div className="flex flex-col items-center text-center md:items-start md:text-left gap-4 md:w-1/3">
                             <div
                                 className="relative h-[250px] w-[250px] rounded-full bg-gradient-to-br from-violet-600 to-violet-900 p-1">
-                                <div className="absolute inset-0 rounded-full overflow-hidden">
+                                <div className="absolute inset-0 rounded-full shadow-all-around overflow-hidden bg-violet-600 opacity-80">
                                     <img
-                                        src="/placeholder.svg?height=250&width=250"
+                                        src="/images/me.png?height=250&width=250"
                                         alt={"bernard-matteo"}
                                         width={250}
                                         height={250}
