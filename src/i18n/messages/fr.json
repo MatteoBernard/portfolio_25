@@ -1,8 +1,149 @@
 {
+  "home": {
+    "hero": {
+      "title": "Bernard Matteo",
+      "subtitle": "Développeur Full Stack",
+      "contactButton": "Me contacter",
+      "projectsButton": "Voir les projets",
+      "portraitAlt": "Portrait de Matteo Bernard"
+    },
+    "about": {
+      "title": "Qui suis-je ?",
+      "description": "Bernard Matteo, passionné de développement. J'aime imaginer et réaliser des applications complexes et adaptées à chaque besoin." ,
+      "button": "En savoir plus"
+    },
+    "skills": {
+      "title": "Mes compétences",
+      "description": "Voici un aperçu des technologies et outils que je maîtrise pour construire des applications robustes et modernes.",
+      "button": "Toutes les compétences"
+    },
+    "projects": {
+      "title": "Mes projets",
+      "description": "Quelques exemples de réalisations récentes, illustrant mon savoir-faire technique et ma créativité.",
+      "viewButton": "Voir le projet",
+      "allProjectsButton": "Tous les projets"
+    },
+    "contact": {
+      "title": "Entrons en contact",
+      "description": "Vous avez un projet, une question ou souhaitez simplement échanger ? N'hésitez pas à me contacter.",
+      "button": "Me contacter"
+    }
+  },
+  "about": {
+    "name": "Bernard Matteo",
+    "role": "Développeur Full Stack",
+    "location": "Lens, France",
+    "email": "bernard.matteo.travail@gmail.com",
+    "aboutMe": {
+      "title": "À propos de moi",
+      "paragraphs": [
+        "Je suis un développeur full stack passionné, bientôt diplômé d'un BUT Informatique spécialisé dans le développement d'applications. Je me spécialise dans la création d'applications web modernes et performantes, en utilisant des technologies telles que React et TypeScript.",
+        "Mon parcours m'a permis de travailler sur divers projets, allant de la conception d'interfaces utilisateur intuitives à la mise en place de systèmes back-end robustes. J'ai une solide expérience dans le développement d'applications web, et je suis toujours à la recherche de nouveaux défis pour améliorer mes compétences.",
+        "Je suis constamment à la recherche de nouvelles technologies et méthodologies pour améliorer mes compétences et rester à jour dans ce domaine en constante évolution."
+      ]
+    },
+    "experience": {
+      "title": "Expérience professionnelle",
+      "items": [
+        {
+          "title": "Développeur Full Stack en alternance",
+          "company": "Lenrek Informatique",
+          "period": "2024 - Présent",
+          "description": "Développement et maintenance d'applications Java, migration de l'interface d'un logiciel en Vaadin, et participation au développement d'une application mobile avec React Native."
+        }
+      ]
+    },
+    "education": {
+      "title": "Formation",
+      "items": [
+        {
+          "degree": "BUT Informatique - Parcours Réalisation d'applications",
+          "institution": "Université d'Artois - IUT de Lens",
+          "period": "2022 - 2025"
+        },
+        {
+          "degree": "Baccalauréat général - Mathématiques et NSI",
+          "institution": "Lycée Carnot - Bruay-la-Buissière",
+          "period": "2019 - 2022"
+        }
+      ]
+    }
+  },
+  "skills": {
+    "title": "Mes Compétences",
+    "description": "Je maîtrise un large éventail de technologies modernes pour créer des applications complexes et performantes.",
+    "frontend": {
+      "title": "Technologies Frontend",
+      "description": "Création d'interfaces utilisateur modernes, réactives et accessibles."
+    },
+    "backend": {
+      "title": "Technologies Backend",
+      "description": "Développement d'applications côté serveur robustes et évolutives, API REST."
+    },
+    "other": {
+      "title": "Autres Compétences",
+      "description": "Outils et technologies qui complètent mes compétences en développement."
+    }
+  },
+  "projects": {
+    "title": "Mes Projets",
+    "description": "Découvrez quelques-uns de mes projets récents, illustrant mon expertise technique et ma créativité.",
+    "sourceButton": "Voir le code source"
+  },
+  "contact": {
+    "title": "Entrons en contact",
+    "description": "Vous avez un projet, une question ou souhaitez simplement échanger ? N'hésitez pas à me contacter.",
+    "info": {
+      "title": "Informations de contact",
+      "description": "Vous pouvez me joindre par email, téléphone ou à mon adresse.",
+      "email": {
+        "value": "bernard.matteo.travail@gmail.com"
+      },
+      "location": {
+        "value": "Lens, France"
+      }
+    },
+    "social": {
+      "title": "Réseaux sociaux"
+    },
+    "email": {
+      "sent": "Message envoyé !",
+        "error": "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer plus tard."
+    },
+    "form": {
+      "title": "Formulaire de contact",
+      "description": "Remplissez le formulaire et je vous répondrai dans les plus brefs délais.",
+
+      "name": {
+        "label": "Nom",
+        "placeholder": "Votre nom"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "votre@email.com"
+      },
+      "subject": {
+        "label": "Sujet",
+        "placeholder": "Sujet de votre message"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Votre message"
+      },
+      "submitButton": "Envoyer"
+    }
+  },
   "navbar": {
     "about": "À propos",
     "skills": "Compétences",
     "projects": "Projets",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "© 2025. Tous droits réservés.",
+    "about": "À propos",
+    "projects": "Projets",
+    "skills": "Compétences",
     "contact": "Contact"
   }
 }

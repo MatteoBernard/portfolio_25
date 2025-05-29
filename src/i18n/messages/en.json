@@ -1,8 +1,148 @@
 {
+  "home": {
+    "hero": {
+      "title": "Bernard Matteo",
+      "subtitle": "Full Stack Developer",
+      "contactButton": "Contact me",
+      "projectsButton": "View projects",
+      "portraitAlt": "Portrait of Matteo Bernard"
+    },
+    "about": {
+      "title": "Who am I?",
+      "description": "Bernard Matteo, a passionate developer. I love to envision and create complex applications tailored to every need.",
+      "button": "Learn more"
+    },
+    "skills": {
+      "title": "My skills",
+      "description": "Here's an overview of the technologies and tools I master to build robust and modern applications.",
+      "button": "See all skills"
+    },
+    "projects": {
+      "title": "My projects",
+      "description": "A few recent works, showcasing my technical expertise and creativity.",
+      "viewButton": "View project",
+      "allProjectsButton": "All projects"
+    },
+    "contact": {
+      "title": "Let's get in touch",
+      "description": "Do you have a project, a question, or just want to chat? Feel free to contact me.",
+      "button": "Contact me"
+    }
+  },
+  "about": {
+    "name": "Bernard Matteo",
+    "role": "Full Stack Developer",
+    "location": "Lens, France",
+    "email": "bernard.matteo.travail@gmail.com",
+    "aboutMe": {
+      "title": "About me",
+      "paragraphs": [
+        "I am a passionate full stack developer, soon to graduate with a BUT in Computer Science specializing in application development. I focus on creating modern and high-performance web applications using technologies such as React and TypeScript.",
+        "My background has allowed me to work on various projects, from designing intuitive user interfaces to implementing robust back-end systems. I have solid experience in web application development and am always looking for new challenges to improve my skills.",
+        "I am constantly seeking new technologies and methodologies to enhance my skills and stay up to date in this ever-evolving field."
+      ]
+    },
+    "experience": {
+      "title": "Professional experience",
+      "items": [
+        {
+          "title": "Full Stack Developer (apprenticeship)",
+          "company": "Lenrek Informatique",
+          "period": "2024 - Present",
+          "description": "Development and maintenance of Java applications, migration of a software interface to Vaadin, and participation in the development of a mobile application with React Native."
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "degree": "BUT in Computer Science - Application Development Track",
+          "institution": "Université d'Artois - IUT de Lens",
+          "period": "2022 - 2025"
+        },
+        {
+          "degree": "General Baccalaureate - Mathematics and CS",
+          "institution": "Lycée Carnot - Bruay-la-Buissière",
+          "period": "2019 - 2022"
+        }
+      ]
+    }
+  },
+  "skills": {
+    "title": "My Skills",
+    "description": "I master a wide range of modern technologies to create complex and high-performance applications.",
+    "frontend": {
+      "title": "Frontend Technologies",
+      "description": "Creation of modern, responsive, and accessible user interfaces."
+    },
+    "backend": {
+      "title": "Backend Technologies",
+      "description": "Development of robust and scalable server-side applications, REST API."
+    },
+    "other": {
+      "title": "Other Skills",
+      "description": "Tools and technologies that complement my development skills."
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "description": "Discover some of my main projects. Click to see the source code or try the demo.",
+    "sourceButton": "Source code"
+  },
+  "contact": {
+    "title": "Let's get in touch",
+    "description": "Do you have a project, a question, or just want to chat? Feel free to contact me.",
+    "info": {
+      "title": "Contact information",
+      "description": "You can reach me by email, phone, or at my location.",
+      "email": {
+        "value": "bernard.matteo.travail@gmail.com"
+      },
+      "location": {
+        "value": "Lens, France"
+      }
+    },
+    "social": {
+      "title": "Social networks"
+    },
+    "email": {
+      "sent": "Message sent successfully!",
+      "error": "An error occurred while sending the message. Please try again later."
+    },
+    "form": {
+      "title": "Contact form",
+      "description": "Fill out the form and I will get back to you as soon as possible.",
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "your@email.com"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Subject of your message"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your message"
+      },
+      "submitButton": "Send"
+    }
+  },
   "navbar": {
     "about": "About",
     "skills": "Skills",
     "projects": "Projects",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "© 2025. All rights reserved.",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
     "contact": "Contact"
   }
 }

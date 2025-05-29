@@ -36,7 +36,7 @@ const NavBar = () => {
     ];
 
     return (
-        <div className="relative flex items-center justify-between w-full px-6 p-2 border-b border-white">
+        <div className="relative flex items-center justify-around w-full p-4 border-b border-white">
             <div className="flex items-center justify-between">
                 <Link href="/" className="mr-6 flex items-center space-x-2">
                     <Code className="h-6 w-6 text-violet-600"/>
