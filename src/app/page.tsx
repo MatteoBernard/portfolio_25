@@ -14,13 +14,11 @@ const Home = () => {
         <div className="flex flex-col">
             <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
                 <div className="container px-4 md:px-6 mx-auto">
-                    <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+                    <div className="flex flex-col md:flex-row gap-6 lg:gap-12 justify-around mx-auto">
                         <div
                             className="flex flex-col justify-center space-y-4 items-center text-center lg:items-start lg:text-left order-1 lg:order-none">
                             <div className="space-y-2">
-                                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                                    {t('home.hero.title')}
-                                </h1>
+                                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">{t('home.hero.title')}</h1>
                                 <p className="max-w-[600px] text-gray-300 md:text-xl mx-auto lg:mx-0">{t('home.hero.subtitle')}</p>
                             </div>
                             <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center items-center">
@@ -69,7 +67,8 @@ const Home = () => {
                         <div className="flex items-center justify-center">
                             <div
                                 className="relative w-48 h-48 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-[350px] lg:h-[350px] rounded-full bg-gradient-to-br from-violet-600 to-violet-900 p-1">
-                                <div className="absolute inset-0 rounded-full shadow-all-around overflow-hidden bg-violet-600 opacity-80">
+                                <div
+                                    className="absolute inset-0 rounded-full shadow-all-around overflow-hidden bg-violet-600 opacity-80">
                                     <img
                                         src="/images/me.png"
                                         alt={t('home.hero.portraitAlt')}
@@ -111,8 +110,10 @@ const Home = () => {
                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
                             {skills.map((skill: Skill) => (
                                 skill.inMainPage &&
-                                <div key={skill.name} className="flex items-center justify-center p-4 rounded-lg border border-gray-200 dark:border-gray-800">
-                                    <p key={skill.name} className="inline-block rounded-2xl bg-violet-100 px-3 py-1 text-sm text-violet-900 dark:bg-violet-900/20 dark:text-violet-300 border border-violet-500">
+                                <div key={skill.name}
+                                     className="flex items-center justify-center p-4 rounded-lg border border-gray-200 dark:border-gray-800">
+                                    <p key={skill.name}
+                                       className="inline-block rounded-2xl bg-violet-100 px-3 py-1 text-sm text-violet-900 dark:bg-violet-900/20 dark:text-violet-300 border border-violet-500">
                                         {skill.name}
                                     </p>
                                 </div>
@@ -138,7 +139,8 @@ const Home = () => {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
                         {projects.slice(0, 3).map((project: Project, index) => (
-                            <div key={index} className="overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 flex flex-col">
+                            <div key={index}
+                                 className="overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 flex flex-col">
                                 <div className="flex items-center justify-center aspect-square p-4">
                                     <img
                                         src={project.icon}
