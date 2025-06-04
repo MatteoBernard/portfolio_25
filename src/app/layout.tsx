@@ -9,6 +9,9 @@ const RootLayout = async ({children}: Readonly<{ children: React.ReactNode; }>) 
 
     return (
         <html lang={locale}>
+        <head>
+            <title>Bernard Matteo</title>
+        </head>
         <body className="min-h-screen flex flex-col">
         <NextIntlClientProvider>
             <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
